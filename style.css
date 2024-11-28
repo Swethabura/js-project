@@ -1,0 +1,275 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: black;
+  color: white;
+  position: relative;
+}
+nav {
+  height: 12%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  h1,
+  ul {
+    width: 50%;
+  }
+}
+.navbar-default {
+  transition: 500ms ease;
+  background: transparent;
+}
+.navbar-default.scrolled {
+  background: rgb(221, 218, 218);
+  color: black;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2%;
+}
+.nav-contents li {
+  display: inline-block;
+}
+/* button:hover {
+    background-color: #555;
+  } */
+.nav-contents li a {
+  color: white;
+  text-decoration: none;
+  font-size: larger;
+  padding: 10px;
+  border-radius: 5px;
+  /* border: solid; */
+}
+.navbar-default.scrolled li a {
+  color: black;
+}
+.nav-contents li a:hover {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(37, 37, 37);
+}
+.game-button {
+  /* border: solid white; */
+  width: 100px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: -7%;
+  font-size: large;
+}
+.navbar-default.scrolled .game-button {
+  color: black;
+}
+.game-button:hover {
+  background-color: rgb(37, 37, 37);
+}
+.game-content {
+  width: 18%;
+  position: fixed; /* Make the content stay fixed on the screen */
+  top: 12%; /* You can adjust this to control how far from the top of the screen it appears */
+  right: 5%;
+  background-color: silver;
+  padding: 20px;
+  border-radius: 8px;
+  color: black;
+  z-index: 1000;
+  display: none; /* Initially hidden */
+}
+.games-list {
+  list-style: none;
+  padding: 2%;
+  font-size: medium;
+}
+.games-list li {
+  padding: 5%;
+}
+.games-list li a {
+  /* border: solid black; */
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 5%;
+  color: black;
+}
+.games-list li a:hover {
+  color: whitesmoke;
+  background-color: rgb(34, 33, 33);
+}
+.item {
+  margin-top: 6.5%;
+  width: 100%;
+  height: 110vh;
+}
+img {
+  width: 100%;
+  height: 100%;
+  size: cover;
+}
+.container-2 {
+  /* border: 1px solid white; */
+  text-align: center;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 3%;
+}
+h2 {
+  text-align: start;
+  font-size: 250%;
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: 0px 0px 10px #00ffcc;
+}
+.game-cards{
+  /* border: 1px solid white; */
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+}
+/* Wrapper for card and button */
+.card-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 20px; /* Space between cards */
+}
+/* General Game Card Styling */
+.game-card, .game-card2 {
+  width: 100%; /* Adjust to fit your design */
+  height: 550px; /* Adjust height as needed */
+  perspective: 1000px; /* For 3D effect */
+}
+/* General Card Front and Back */
+.game-card .card, .game-card2 .card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+.game-card .front, .game-card2 .front,
+.game-card .back, .game-card2 .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.game-card .front img, .game-card2 .front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+/* Back Styles */
+.game-card .back, .game-card2 .back {
+  background-color: #333; /* Background color for the back */
+  color: white;
+  text-align: center;
+  padding: 2%;
+}
+/* Y-axis flip for default .game-card */
+.game-card:hover .card {
+  transform: rotateY(180deg);
+}
+.game-card .back {
+  transform: rotateY(180deg);
+}
+
+/* X-axis flip for .game-card2 */
+.game-card2:hover .card {
+  transform: rotateX(180deg);
+}
+.game-card2 .back {
+  transform: rotateX(180deg);
+}
+.card .back pre{
+  background: transparent;
+  border: none;
+  font-size: 28px;
+}
+.play-btn{
+  font-size: x-large;
+  padding: 1% 4%;
+  border: none;
+  border-radius: 8px;
+  font-family: cursive;
+  background-color: darkgreen;
+}
+.play-btn:hover{
+  background-color:green;
+  color: azure;
+}
+.play-btn a{
+  color: white;
+}
+.about {
+  /* border: 1px solid white; */
+  border-radius: 10px;
+  padding: 15px;
+  width: 90%;
+  margin: auto;
+  font-family: cursive;
+  font-size: 16px;
+  background: linear-gradient(to right, #141e30, #243b55);
+}
+.game-name {
+  transition: color 0.3s ease-in-out;
+  font-size: 18px;
+  /* text-decoration: underline;
+  text-underline-offset: 4px; */
+}
+.game-name:hover {
+  cursor: pointer;
+  color: #ff5733;
+  text-shadow: 0px 0px 10px #ff5733;
+  /* text-decoration: wavy; */
+}
+.about h4{
+  transition: color 0.3s ease-in-out;
+}
+.about h4:hover{
+  cursor: pointer;
+  color: #ff5733;
+  text-shadow: 0px 0px 10px #ff5733;
+}
+.footer{
+  margin-top: 5%;
+  /* border: 1px solid white; */
+  width: 100%;
+  height: 30vh;
+  background: rgb(175, 173, 173);
+  padding-left: 20px;
+  color: black;
+}
+.footer h2{
+  color: black;
+  text-shadow: 0px 0px 5px red;
+  padding-top:10px;
+}
+.fa-brands{
+  color: black;
+  font-size: 24px;
+  padding-right: 2%;
+}
+.icons{
+  display: grid;
+  grid-template-columns: auto auto;
+  font-size: 22px;
+}
+

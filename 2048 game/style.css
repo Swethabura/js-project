@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    padding: 20px;
+    background: url(bg6.webp);
+    background-size:cover;
+}
+hr{
+    width: 80%;
+    margin: 2% auto;
+    color: white;
+    opacity: 0.5;
+}
+#board{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(177, 173, 173);
+    border: 6px solid grey;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tile{
+    width: 97px;
+    height: 97px;
+    border: 5px solid grey;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.x2{
+    background-color: #f3f198;
+    color: #727371;
+}
+.x4{
+    background-color: #f7cc7e;
+    color: #727371;
+}
+.x8{
+    background-color: #eb9047;
+    color: white;
+}
+.x16{
+    background-color: #e76b42;
+    color: white;
+}
+.x32{
+    background-color: #f57cf5;
+    color: white;
+}
+.x64{
+    background-color: #f04822;
+    color: white;
+}
+.x128{
+    background-color: #ebbc31;
+    color: white;
+}
+.x256{
+    background-color: #40d354;
+    color: white;
+}
+.x512{
+    background-color: #c04c90;
+    color: white;
+}
+.x1024{
+    background-color: #a52ea5;
+    color: white;
+}
+.x2048{
+    background-color: #ecc230;
+    color: white;
+}
+.x4096{
+    background-color: #f33d3d;
+    color: white;
+}
+.x8192{
+    background-color: #ff2020;
+    color: white;
+}
+h2{
+    margin-bottom: 2%;
+    /* color: blueviolet; */
+    color: whitesmoke;
+    opacity: 0.7;
+}
+h1{
+    font-size: 300%;
+    color: whitesmoke;
+    opacity: 0.8;
+}
+.gameOverPage{
+    position: absolute;
+    top: 50%;
+    left: 28%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    width: 35%;
+    height: 25%;
+    font-size: 300%;
+    display: none;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    padding-top: 1%;
+
+}
+/* .gameOverPage.show {
+    display: block;
+    opacity: 1;
+} */

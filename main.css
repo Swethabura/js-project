@@ -1,0 +1,258 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(22, 22, 22);
+  color: white;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.navbar-default {
+  transition: 500ms ease;
+  background: black;
+}
+.navbar-default.scrolled {
+  background: linear-gradient(to bottom, rgb(241, 142, 142), rgb(238, 215, 86));
+  color: black;
+}
+nav {
+  height: 12%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  h1,
+  ul {
+    width: 50%;
+  }
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2%;
+}
+.nav-contents li {
+  display: inline-block;
+  font-family: "Bungee Spice";
+  font-size: 18px;
+}
+.nav-contents li a {
+  color: white;
+  text-decoration: none;
+  font-size: larger;
+  padding: 10px;
+  border-radius: 5px;
+  /* border: solid; */
+}
+.navbar-default.scrolled li a {
+  color: black;
+}
+.nav-contents li a:hover {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(37, 37, 37);
+}
+.game-button {
+  /* border: solid white; */
+  width: 120px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: -7%;
+  font-size: large;
+}
+.navbar-default.scrolled .game-button {
+  color: black;
+}
+.game-button:hover {
+  background-color: rgb(37, 37, 37);
+}
+.game-content {
+  width: 18%;
+  position: fixed; /* Make the content stay fixed on the screen */
+  top: 14%; /* You can adjust this to control how far from the top of the screen it appears */
+  right: 5%;
+  background-color: silver;
+  padding: 20px;
+  border-radius: 8px;
+  color: black;
+  z-index: 1000;
+  display: none; /* Initially hidden */
+}
+.games-list {
+  list-style: none;
+  padding: 2%;
+  font-size: medium;
+}
+.games-list li {
+  padding: 5%;
+}
+.games-list li a {
+  /* border: solid black; */
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 5%;
+  color: black;
+}
+.games-list li a:hover {
+  color: whitesmoke;
+  background-color: rgb(34, 33, 33);
+}
+.item {
+  margin-top: 6.5%;
+  width: 100%;
+  height: 110vh;
+}
+img {
+  width: 100%;
+  height: 100%;
+  size: cover;
+}
+nav h1 {
+  font-family: "Algerian";
+  background: linear-gradient(
+    to right,
+    #fa2f01,
+    #a17d04,
+    #bceb65
+  ); /* Same gradient as Bungee Spice */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: bold;
+  font-size: 36px;
+  padding-left: 10px;
+}
+.game-cards {
+  width: 100%;
+  /* border: 2px solid white; */
+}
+.cards {
+  /* border: 1px solid red; */
+  width: 95%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 35px;
+  .card {
+    flex-basis: 48%;
+    width: 100%;
+  }
+}
+.card {
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0px 0px 8px red;
+  border-radius: 20px;
+  gap: 25px;
+}
+.card video {
+  width: 60%;
+  border-radius: 10px;
+}
+.card p {
+  text-align: justify;
+  font-family: "Edu AU VIC WA NT Pre", cursive;
+  font-size: 18px;
+}
+h2 {
+  padding: 0 0 15px 32px;
+  font-size: 38px;
+  font-weight: bold;
+  background: linear-gradient(
+    45deg,
+    crimson,
+    gold,
+    limegreen,
+    dodgerblue,
+    magenta
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 1px crimson, 0 0 2px gold, 0 0 5px limegreen,
+    0 0 5px dodgerblue, 0 0 1px magenta;
+  font-family: "Protest Revolution";
+}
+h3 {
+  font-family: "Merienda";
+  font-weight: bold;
+  text-align: center;
+  width: 280%;
+  padding-bottom: 15px;
+  background: linear-gradient(45deg, cyan, violet, magenta, gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 1px yellow, 0 0 5px red, 0 0 5px magenta, 0 0 10px red;
+  /* border: 1px solid white; */
+}
+.emoji {
+  font-size: inherit; /* Match the text size */
+  font-weight: normal; /* Reset font weight for emoji */
+  color: unset; /* Ensure default color for emoji */
+  display: inline;
+}
+.about {
+  /* border: 1px solid white; */
+  width: 95%;
+  height: 45vh;
+  margin: 25px auto;
+  padding: 0 10px 0 10px;
+  text-align: justify;
+  font-family: "Edu AU VIC WA NT Pre", serif;
+  font-size: large;
+  letter-spacing: 1.2px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 12px blue;
+}
+.about h2 {
+  padding: 10px 0 0 8px;
+}
+.footer {
+  background-color: rgb(182, 179, 179);
+  color: black;
+  font-size: 20px;
+}
+.footer h2 {
+  padding-top: 15px;
+}
+.icons {
+  /* border: 1px solid black; */
+  width: 95%;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 0 35px;
+  gap: 0 30px;
+}
+.icons p i {
+  padding-right: 10px;
+}
+.card button {
+  margin-left: 110%;
+  padding: 2% 10%;
+  font-size: 24px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: rgb(22, 138, 22);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.card button a {
+  text-decoration: none;
+  color: white;
+}
+.card button:hover {
+  background-color: rgb(1, 78, 1);
+}

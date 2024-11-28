@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaming-Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- nav bar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <h1>Gaming Zone</h1>
+      <ul class="nav-contents">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="gameButton" class="game-button">🎮 Game</button></li>
+      </ul>
+    </nav>
+
+    <!-- Content that will toggle on button click -->
+    <div id="gameContent" class="game-content">
+      <ol class="games-list">
+        <li><a href="#hangman">Hangman</a></li>
+        <li><a href="#2048">2048</a></li>
+        <li><a href="#flappy">Flappy bird</a></li>
+        <li><a href="#space">Space Invaders</a></li>
+        <li><a href="#rps">Rock Scissor Paper</a></li>
+        <li><a href="#sudoku">Sudoku</a></li>
+        <li><a href="#snake">Classic Snake</a></li>
+        <li><a href="#jelly">Jelly Run</a></li>
+        <li><a href="#card">Memory Card Match</a></li>
+      </ol>
+    </div>
+
+    <!-- carousel -->
+    <div class="container" id="home">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img
+              src="images/img-1.webp"
+              alt="Los Angeles"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="item">
+            <img src="images/img-2.png" alt="Chicago" style="width: 100%" />
+          </div>
+
+          <div class="item">
+            <img src="images/img-3.jpg" alt="New york" style="width: 100%" />
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <!-- content about games-->
+    <div class="container-2">
+      <h2>Games</h2>
+      <div class="game-cards">
+        <!-- game card-1 -->
+        <div class="card-container" id="rps">
+          <div class="game-card" id="rps">
+            <div class="card">
+              <div class="front">
+                <img src="main-images/rps-1.jpg" alt="Game Image 1" />
+              </div>
+              <div class="back">
+                <h3 style="font-family: 'Bangers', system-ui; color: #f39d12ef">
+                  "Rock Paper Scissors: The Ultimate Showdown"
+                </h3>
+                <pre>✊   🖐   ✌️</pre>
+                <p
+                  style="
+                    font-family: 'Comic Sans MS', cursive, sans-serif;
+                    font-size: 16px;
+                    line-height: 1.5;
+                  "
+                >
+                  <span style="font-family: 'Arial Black', sans-serif"
+                    >Think you can outsmart the CPU?</span
+                  >
+                  🤔 This classic game isn't just about chance—<span
+                    style="
+                      font-family: 'Courier New', monospace;
+                      font-weight: bold;
+                    "
+                    >it’s a battle of wits!</span
+                  >
+                  🧠 Will you
+                  <span style="font-style: italic; font-weight: bold"
+                    >predict</span
+                  >
+                  the computer’s next move, or will it
+                  <span style="text-decoration: underline">beat</span> you to
+                  the punch? 💥
+                  <span style="font-family: 'Verdana', sans-serif"
+                    >Challenge yourself, test your instincts,</span
+                  >
+                  and see if you can master the game. 🎮
+                  <span
+                    style="
+                      font-family: 'Trebuchet MS', sans-serif;
+                      font-size: 18px;
+                      font-weight: bold;
+                    "
+                    >Ready to take on the machine?</span
+                  >
+                  🤖 Let’s find out if you have what it takes to
+                  <span style="font-family: 'Georgia', serif; font-weight: bold"
+                    >win!</span
+                  >
+                  🏆
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="play-btn">
+            <a href="rock-paper-scissor/manual.html">Play</a>
+          </button>
+        </div>
+
+        <!-- game card-2 -->
+        <div class="card-container" id="card">
+          <div class="game-card2" id="card">
+            <div class="card">
+              <div class="front">
+                <img src="main-images/card-1.jpg" alt="Game Image 2" />
+              </div>
+              <div class="back">
+                <h3 style="font-family: 'Bangers', system-ui; color: #f39d12ef">
+                  "Test Your Memory: Flip, Match, Win!""
+                </h3>
+                <p
+                  style="
+                    font-family: 'Comic Sans MS', cursive, sans-serif;
+                    font-size: 16px;
+                    line-height: 1.6;
+                  "
+                >
+                  <span
+                    style="
+                      font-family: 'Arial Black', sans-serif;
+                      color: #ff6347;
+                    "
+                    >Ready to test your memory?</span
+                  >
+                  🧠 This isn’t just about luck—<span
+                    style="
+                      font-family: 'Courier New', monospace;
+                      font-weight: bold;
+                    "
+                    >it’s a true challenge for your brain!</span
+                  >
+                  💡 Flip the cards and
+                  <span style="font-style: italic; font-weight: bold"
+                    >match the pairs</span
+                  >
+                  to win! 🎉 Each turn is a new opportunity to
+                  <span
+                    style="font-family: 'Verdana', sans-serif; color: #32cd32"
+                    >sharpen your focus</span
+                  >
+                  🔍 and see how well you remember the cards. 🃏
+                  <span
+                    style="
+                      font-family: 'Trebuchet MS', sans-serif;
+                      font-size: 20px;
+                      font-weight: bold;
+                      color: #ff1493;
+                    "
+                    >The more you play, the better you’ll get!</span
+                  >
+                  🌟 Are you ready to take on this brain-boosting challenge? 🎮
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="play-btn"><a href="memory-card game/index.html">Play</a></button>
+        </div>
+
+        <!-- game card-3 -->
+        <div class="card-container" id="2048">
+          <div class="game-card" id="card">
+            <div class="card">
+              <div class="front">
+                <img src="main-images/2048 img-2.png" alt="Game Image 3" />
+              </div>
+              <div class="back">
+                <h3 style="font-family: 'Bangers', system-ui; color: #f39d12ef">
+                  "2048: Merge, Strategize, Conquer!"
+                </h3>
+                <p
+                  style="
+                    font-family: 'Comic Sans MS', cursive, sans-serif;
+                    font-size: 16px;
+                    line-height: 1.5;
+                  "
+                >
+                  <span style="font-family: 'Arial Black', sans-serif"
+                    >Ready to challenge your brain?</span
+                  >
+                  🧠 This classic puzzle isn’t just about luck—<span
+                    style="
+                      font-family: 'Courier New', monospace;
+                      font-weight: bold;
+                    "
+                    >it’s a test of strategy!</span
+                  >
+                  💡 Slide the tiles,
+                  <span style="font-style: italic; font-weight: bold"
+                    >merge them wisely</span
+                  >, and see if you can reach
+                  <span style="text-decoration: underline; color: #f39c12"
+                    >2048!</span
+                  >
+                  ✨
+                  <span style="font-family: 'Verdana', sans-serif"
+                    >Every move counts,</span
+                  >
+                  so think carefully before you make your next move! 🔄
+                  <span
+                    style="
+                      font-family: 'Trebuchet MS', sans-serif;
+                      font-size: 18px;
+                      font-weight: bold;
+                    "
+                    >Are you up for the challenge?</span
+                  >
+                  🎮 Let’s find out if you can master the puzzle and
+                  <span style="font-family: 'Georgia', serif; font-weight: bold"
+                    >claim your victory!</span
+                  >
+                  🏆
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="play-btn"><a href="2048 game/index.html">Play</a></button>
+        </div>
+
+        <!-- game card-4 -->
+        <div class="card-container" id="hangman">
+          <div class="game-card2" id="card">
+            <div class="card">
+              <div class="front">
+                <img src="main-images/hangman-2.jpg" alt="Game Image 3" />
+              </div>
+              <div class="back">
+                <h3 style="font-family: 'Bangers', system-ui; color: #f39d12ef">
+                  "Word Warrior: The Ultimate Hangman Challenge"
+                </h3>
+                <p
+                  style="
+                    font-family: 'Verdana', sans-serif;
+                    font-size: 16px;
+                    line-height: 1.6;
+                  "
+                >
+                  <span
+                    style="
+                      font-family: 'Georgia', serif;
+                      color: #f1db5e;
+                      font-size: 18px;
+                      font-weight: bold;
+                    "
+                    >Ready to test your wit?</span
+                  >
+                  🧩 This isn’t just any word game—<span
+                    style="
+                      font-family: 'Courier New', monospace;
+                      font-weight: bold;
+                      color: #ff6347;
+                    "
+                    >it’s a true challenge for your mind!</span
+                  >
+                  💥 Every wrong guess brings you closer to the
+                  <span
+                    style="
+                      font-family: 'Tahoma', sans-serif;
+                      font-style: italic;
+                      color: #9087e2;
+                    "
+                    >hangman’s fate</span
+                  >
+                  ⛓️, but each correct letter takes you one step closer to
+                  victory! 🌟
+                  <span
+                    style="
+                      font-family: 'Lucida Console', monospace;
+                      font-size: 18px;
+                      font-weight: bold;
+                      color: #32cd32;
+                    "
+                    >Can you crack the code before it’s too late?</span
+                  >
+                  🚨 Play at your own pace and watch your mind get sharper with
+                  every round! 🧠🔥
+                  <span
+                    style="
+                      font-family: 'Courier New', monospace;
+                      font-size: 20px;
+                      font-weight: bold;
+                      color: #dd3232;
+                    "
+                    >The game is on—are you up for the challenge?</span
+                  >
+                  🔥
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="play-btn"><a href="hangman/index.html">Play</a></button>
+        </div>
+
+        <!-- game card-5 -->
+        <div class="card-container" id="jelly">
+          <div class="game-card" id="card">
+            <div class="card">
+              <div class="front">
+                <img src="main-images/run-2.jpg" alt="Game Image 3" />
+              </div>
+              <div class="back">
+                <h3 style="font-family: 'Bangers', system-ui; color: #f39d12ef">
+                  "Jelly Bounce: The Ultimate Jump Challenge"
+                </h3>
+                <p
+                  style="
+                    font-family: 'Verdana', sans-serif;
+                    font-size: 16px;
+                    line-height: 1.6;
+                  "
+                >
+                  <span
+                    style="
+                      font-family: 'Georgia', serif;
+                      font-size: 18px;
+                      font-weight: bold;
+                    "
+                    >Jump into the jelly fun!</span
+                  >
+                  🍇 Get ready for a smooth, bouncy ride in Jelly Jump and Run!
+                  🏃‍♂️💨 Take control of a squishy jelly and leap over obstacles
+                  with perfect timing! Each jump challenges your reflexes as you
+                  race through the jelly world! 💥 Simple to play but hard to
+                  master, the more you jump, the more fun it gets! 🌟
+                  <span
+                    style="
+                      font-family: 'Lucida Console', monospace;
+                      font-size: 19px;
+                      font-weight: bold;
+                    "
+                    >How many jumps can you make?</span
+                  >
+                  🚀 Stay focused and see how far your jelly can go! 🧠💪
+                  <span
+                    style="
+                      font-family: 'Courier New', monospace;
+                      font-size: 18px;
+                      font-weight: bold;
+                    "
+                    >It’s time to jump, run, and enjoy the ride!</span
+                  >
+                  🎮
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="play-btn"><a href="jumpAndRunGame/index.html">Play</a></button>
+        </div>
+
+        <!-- game card-6 -->
+        <div class="card-container" id="snake">
+          <div class="game-card2" id="card">
+            <div class="card">
+              <div class="front">
+                <img src="main-images/snake-3.jpg" alt="Game Image 3" />
+              </div>
+              <div class="back">
+                <h3 style="font-family: 'Bangers', system-ui; color: #f39d12ef">
+                  "Snake Quest: Conquer the High Score!"
+                </h3>
+                <p
+                  style="
+                    font-family: cursive;
+                    font-size: 16px;
+                    line-height: 1.6;
+                  "
+                >
+                  <span
+                    style="
+                      font-family: 'Georgia', serif;
+                      font-size: 18px;
+                      font-weight: bold;
+                      color: hotpink;
+                    "
+                    >Ready to take on the classic challenge?</span
+                  >
+                  🐍 Step into the world of
+                  <span
+                    style="
+                      font-family: 'Courier New', Verdana, Geneva, Tahoma,
+                        sans-serif;
+                      font-weight: bold;
+                      color: #32cd32;
+                    "
+                    >Snake</span
+                  >, where speed, strategy, and precision collide! Control your
+                  snake and gobble up the food, but beware—one wrong move, and
+                  it’s game over! ⚡
+                  <span
+                    style="
+                      font-family: 'Lucida Console', monospace;
+                      font-size: 19px;
+                      font-weight: bold;
+                      color: aqua;
+                    "
+                    >Can you avoid the walls and your own tail long enough to
+                    hit a new high score?</span
+                  >
+                  🎯 The longer your snake grows, the faster and trickier it
+                  gets! ⏩
+                  <span
+                    style="
+                      font-family: 'Tahoma', sans-serif;
+                      font-size: 17px;
+                      color: yellow;
+                    "
+                    >Each point you score brings you closer to becoming the
+                    ultimate snake master!</span
+                  >
+                  🏆 Think you have the reflexes to survive? Challenge yourself,
+                  beat your high score, and see if you can top the leaderboard!
+                  🌟
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="play-btn"><a href="snake/index.html">Play</a></button>
+        </div>
+
+        <!-- game card-7 -->
+        <div class="card-container" id="space">
+          <div class="game-card" id="card">
+            <div class="card">
+              <div class="front">
+                <img src="main-images/sp-in-img.jpg" alt="Game Image 3" />
+              </div>
+              <div class="back">
+                <h3 style="font-family: 'Bangers', system-ui; color: #f39d12ef">
+                  "Space Defenders: Alien Onslaught"
+                </h3>
+                <p
+                  style="
+                    font-family: monospace;
+                    font-size: 16px;
+                    line-height: 1.6;
+                  "
+                >
+                  <span
+                    style="
+                      font-family: 'Georgia', serif;
+                      font-size: 19px;
+                      font-weight: bold;
+                    "
+                    >The invasion has begun!</span
+                  >
+                  👾 Step into the cockpit and take on the alien forces in this
+                  classic space battle! 🚀 Your mission? Destroy wave after wave
+                  of space invaders before they reach the bottom of the screen!
+                  💥 With each alien you defeat, your score climbs higher, but
+                  be careful—the invaders are getting faster! ⚡
+                  <span
+                    style="
+                      font-family: cursive;
+                      font-weight: bold;
+                      font-size: 18px;
+                    "
+                    >How long can you survive the relentless onslaught?</span
+                  >
+                  🌌 Every shot counts, and one wrong move could mean the end!
+                  🌠
+                  <span
+                    style="
+                      font-family: cursive;
+                      font-size: 20px;
+                      font-weight: bold;
+                    "
+                    >Test your reflexes and see how high you can score!</span
+                  >
+                  🎯 The fate of Earth depends on your quick thinking—are you up
+                  for the challenge? 💫
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="play-btn"><a href="space-invaders/index.html">Play</a></button>
+        </div>
+
+        <!-- game card-8 -->
+        <div class="card-container" id="sudoku">
+          <div class="game-card2" id="card">
+            <div class="card">
+              <div class="front">
+                <img src="main-images/sudimg-1.jpg" alt="Game Image 3" />
+              </div>
+              <div class="back">
+                <h3 style="font-family: 'Bangers', system-ui; color: #f39d12ef">
+                  "Sudoku Revolution: Master the Numbers!"
+                </h3>
+                <p
+                  style="
+                    font-family: 'Courier New', monospace;
+                    font-size: 15px;
+                    line-height: 1.6;
+                    color: #00bfff;
+                  "
+                >
+                  <span
+                    style="
+                      font-family: 'Georgia', serif;
+                      font-size: 18px;
+                      font-weight: bold;
+                      color: #ff6347;
+                    "
+                    >Welcome to the ultimate Sudoku challenge!</span
+                  >
+                  🧩 Test your logical thinking as you fill the grid with
+                  numbers from 1 to 9! 🧠 Your goal? Complete the puzzle while
+                  minimizing mistakes—each error will leads you down! ⚠️
+                  <span
+                    style="
+                      font-family: 'Times New Roman', serif;
+                      font-size: 16px;
+                      color: #32cd32;
+                      font-weight: bold;
+                    "
+                    >Need help? Use your hints wisely—only a limited number are
+                    available! 🔍</span
+                  >
+                  Choose from five thrilling difficulty modes:
+                  <span
+                    style="
+                      font-family: 'Comic Sans MS', cursive;
+                      font-size: 16px;
+                      color: #ff1493;
+                    "
+                    >Easy</span
+                  >,
+                  <span
+                    style="
+                      font-family: 'Courier New', monospace;
+                      font-size: 16px;
+                      color: #ffd700;
+                    "
+                    >Medium</span
+                  >,
+                  <span
+                    style="
+                      font-family: 'Arial', sans-serif;
+                      font-size: 16px;
+                      color: aqua;
+                    "
+                    >Hard</span
+                  >,
+                  <span
+                    style="
+                      font-family: 'Verdana', sans-serif;
+                      font-size: 16px;
+                      color: #8a2be2;
+                    "
+                    >Insane</span
+                  >, and
+                  <span
+                    style="
+                      font-family: 'Lucida Console', monospace;
+                      font-size: 18px;
+                      color: #dc143c;
+                    "
+                    >Inhuman</span
+                  >! 💥
+                  <span
+                    style="
+                      font-family: 'Palatino', serif;
+                      font-size: 18px;
+                      color: #ffd700;
+                      font-weight: bold;
+                    "
+                    >Patience, focus, and strategy are key—one wrong move could
+                    set you back! ⏳</span
+                  >
+                  <span
+                    style="
+                      font-family: 'Brush Script MT', cursive;
+                      font-size: 16px;
+                      color: #7fff00;
+                    "
+                    >Ready to tackle the puzzle?</span
+                  >
+                  🌟 Think carefully, because every choice counts—can you solve
+                  it without cracking under pressure? 🔥
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="play-btn"><a href="sudoku game/index.html">Play</a></button>
+        </div>
+
+        <!-- game card-9 -->
+        <div class="card-container" id="flappy">
+          <div class="game-card" id="card">
+            <div class="card">
+              <div class="front">
+                <img src="main-images/bird-1.jpg" alt="Game Image 3" />
+              </div>
+              <div class="back">
+                <h3 style="font-family: 'Bangers', system-ui; color: #f39d12ef">
+                  "Feathers of Fury: Fly or Fall!"
+                </h3>
+                <p
+                  style="
+                    font-family: 'Courier New', monospace;
+                    font-size: 16px;
+                    line-height: 1.6;
+                  "
+                >
+                  <span
+                    style="
+                      font-family: 'Georgia', serif;
+                      font-size: 18px;
+                      font-weight: bold;
+                    "
+                    >Get ready to soar through the skies in Flappy Bird!</span
+                  >
+                  🕊️ Tap to keep your bird flying as you navigate through a
+                  series of tricky pipes! 🌬️ Your goal? Keep flying and rack up
+                  as many points as you can without hitting the pipes! ⚠️
+                  <span
+                    style="
+                      font-family: 'Times New Roman', serif;
+                      font-size: 16px;
+                      font-weight: bold;
+                    "
+                    >Every tap counts—control your flight and aim for a higher
+                    score!</span
+                  >
+                  The challenge increases with every point you score, so stay
+                  sharp and focused! 🔥
+                  <span
+                    style="
+                      font-family: 'Comic Sans MS', cursive;
+                      font-size: 16px;
+                    "
+                    >Can you master the skies and achieve the highest
+                    score?</span
+                  >
+                  🌟 It's all about timing, precision, and persistence—how far
+                  can you go? 💥
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="play-btn"><a href="flappy-bird/index.html">Play</a></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- about sections -->
+    <div id="about" class="about">
+      <h2>About</h2>
+      <h4
+        style="
+          text-align: center;
+          font-size: 22px;
+          text-decoration: underline;
+          text-underline-offset: 6px;
+          padding: 5px;
+        "
+      >
+        🎮 Welcome to our gaming hub! 🎮
+      </h4>
+      <p style="text-align: justify">
+        Here, simplicity meets fun! Our collection of engaging browser-based
+        games is crafted with HTML, CSS, and JavaScript to deliver a seamless
+        and enjoyable gaming experience. Each game is designed with care,
+        blending creative gameplay mechanics with intuitive controls to ensure a
+        mix of entertainment and challenge. Whether you're in the mood for a
+        nostalgic throwback, a test of skill, or a casual way to unwind, our
+        games cater to players of all ages and skill levels. Dive in, explore,
+        and let the fun begin!
+      </p>
+      <p>
+        <b class="game-name">🐍 Classic Snake Game: </b>Guide the snake to
+        collect food and grow without hitting walls or yourself.
+      </p>
+      <p>
+        <b class="game-name">🔠 Hangman Game: </b>Test your vocabulary and
+        guessing skills in this classic word game.
+      </p>
+      <p>
+        <b class="game-name">👾 Space Invaders: </b>Defend against waves of
+        alien invaders in this retro-styled shooter.
+      </p>
+      <p>
+        <b class="game-name">🔢 2048 Game: </b>Merge tiles with matching numbers
+        to reach the elusive 2048 tile.
+      </p>
+      <p>
+        <b class="game-name">🃏 Memory Card Matching: </b>Exercise your memory
+        with this relaxing card-matching game, free from time pressure.
+      </p>
+      <p>
+        <b class="game-name">🧩 Sudoku Game: </b>Solve puzzles with five
+        difficulty levels—easy, medium, hard, insane, and inhuman!
+      </p>
+      <p>
+        <b class="game-name">🍇 Jelly Jump: </b>Help the jelly leap to safety in
+        this endless runner!
+      </p>
+      <p>
+        <b class="game-name">✊✌️✋ Rock, Scissors, and Paper: </b>Go
+        head-to-head with a CPU opponent in this timeless game of strategy.
+      </p>
+      <p>
+        <b class="game-name">🐦 Flappy Bird: </b>Glide between obstacles in this
+        deceptively simple yet highly addictive game.
+      </p>
+      <p>🕹️ Dive in and explore—hours of fun await you! 🕹️</p>
+    </div>
+    <!-- Footer -->
+    <div class="footer" id="contact">
+      <h2>Contact</h2>
+      <div class="icons">
+        <p><i class="fa-solid fa-phone"></i> +91 7732002429</p>
+        <p>
+          <i class="fa-brands fa-linkedin"></i
+          ><a href="www.linkedin.com/in/Swetha-bura"
+            >www.linkedin.com/in/Swetha-bura</a
+          >
+        </p>
+        <p>
+          <i class="fa-brands fa-github"></i
+          ><a href="https://github.com/Swethabura"
+            >https://github.com/Swethabura</a
+          >
+        </p>
+        <p>
+          <i class="fa-brands fa-instagram"></i
+          ><a href="https://www.instagram.com/">www.instagram.com</a>
+        </p>
+        <p>
+          <i class="fa-brands fa-twitter"></i
+          ><a href="https://x.com/">https://x.com/</a>
+        </p>
+        <p>
+          <i class="fa-brands fa-facebook"></i
+          ><a href="www.facebook.com">www.facebook.com</a>
+        </p>
+      </div>
+    </div>
+    <script>
+      $(window).scroll(function () {
+        $("nav").toggleClass("scrolled", $(this).scrollTop() > 50);
+      });
+
+      // Get references to the button and content div
+      const gameButton = document.getElementById("gameButton");
+      const gameContent = document.getElementById("gameContent");
+
+      // Add an event listener to the game button
+      gameButton.addEventListener("click", function () {
+        // Toggle the visibility of the game content
+        if (
+          gameContent.style.display === "none" ||
+          gameContent.style.display === ""
+        ) {
+          gameContent.style.display = "block";
+        } else {
+          gameContent.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>

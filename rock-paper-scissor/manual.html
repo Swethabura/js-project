@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="manual.css">
+    <title>Game Manual</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>How to Play Rock, Paper & Scissors!</h1>
+      <!-- objective container -->
+      <div class="objective">
+        <p>
+          The goal of Rock, Paper, Scissors is simple: You and your opponent
+          each choose one of the three hand gestures—<b>Rock</b>, <b>Paper</b>,
+          or <b>Scissors</b>—and compare them to see who wins based on the
+          following rules:
+        </p>
+        <ul>
+          <li><b>Rock beats Scissors</b></li>
+          <li><b>Scissors beats Paper</b></li>
+          <li><b>Paper beats Rock</b></li>
+        </ul>
+      </div>
+      <!-- instruction container -->
+      <div class="instructions">
+        <h2>Step-by-Step Instructions</h2>
+        <hr />
+        <!-- step1 -->
+        <h3>Step 1: Understand the Symbols</h3>
+        <ul>
+          <li><b>Rock</b></li>
+        </ul>
+        <p class="choice">A fist with your thumb pointing up.</p>
+        <img src="rock.jfif" alt="" />
+
+        <ul>
+          <li><b>Paper</b></li>
+        </ul>
+        <p class="choice">An open hand with fingers extended.</p>
+        <img src="paper.jfif" alt="" />
+
+        <ul>
+          <li><b>Scissors</b></li>
+        </ul>
+        <p class="choice">A fist with the index and middle fingers extended, forming a "V."</p>
+        <img src="scissors.jfif" alt="" />
+        <!-- step2 -->
+        <h3>Step 2: Selecting the gestures—</h3>
+        <p>
+          Click on the any button that you want to select as your gesture. Your
+          Opponent (CPU) will also choose it's sign for the round and wait for
+          the result.
+        </p>
+        <!-- step3 -->
+        <h3>Step 3: Compare the Gestures</h3>
+        <h4>Rock vs Scissors</h4>
+        <li class="gesture">Rock crushes Scissors!</li>
+        <p>If you pick Rock and your opponent picks Scissors, Rock wins.</p>
+        <h4>Scissors vs Paper</h4>
+        <li class="gesture">Scissors cut Paper!</li>
+        <p>If you pick Scissors and your opponent picks Paper, Scissors win.</p>
+        <h4>Paper vs Rock</h4>
+        <li class="gesture">Paper covers Rock!</li>
+        <p>If you pick Paper and your opponent picks Rock, Paper wins.</p>
+        <h4>Tie Scenario</h4>
+        <li class="gesture">If both players choose the same gesture, it’s a tie.</li>
+        <p>
+          <b>Example:</b> Both pick Rock, so no one wins. You can replay the round!
+        </p>
+        <!-- step4 -->
+        <h3>Step 4: Scoring</h3>
+        <p>
+          If you win you'll awarded with '1' point, but if you lose you're
+          losing score will also increases. You neither get a point nor lose if
+          it is a tie!
+        </p>
+      </div>
+      <!-- strategy -->
+       <div class="strategy">
+        <h2>Basic Strategy Tips:</h2>
+        <ol>
+          <li><b>Randomization: </b>Don’t pick the same gesture too often. Try to mix it up to keep your opponent guessing.</li>
+          <li><b>Psychological Play: </b>Pay attention to your Opponent (CPU) moves. Try to guess it before hand!</li>
+        </ol>
+        <p>This is a simple yet fun game that can be played anywhere, anytime. Whether for decision-making or just for fun, Rock, Paper, Scissors brings a quick and playful competition to any moment!</p>
+       </div>
+       <!-- final button to jumo into the game -->
+        <div class="final">
+        <p><b>All the best for the game!</b></p>
+        <button id="btn">Play Now</button>
+      </div>
+    </div>
+
+    <script>
+      const btn = document.getElementById("btn");
+      btn.addEventListener("click", ()=>{
+        window.open("index.html", "_self");
+      });
+    </script>
+  </body>
+</html>
